@@ -8,7 +8,7 @@ namespace PassTheCat
     {
         public void DoSomethingWithCat(Delegate passTheCat)
         {
-            Console.WriteLine("the human pets " + passTheCat. );
+            Console.WriteLine("the human pets " + passTheCat );
         }
     }
 }

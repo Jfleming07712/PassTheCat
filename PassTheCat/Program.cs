@@ -4,14 +4,7 @@ namespace PassTheCat
 {
     class Program
     {
-        Robot robot = new Robot();
-        Human human = new Human();
-        Bear bear = new Bear();
-        Cat lerroy = new Cat()
-        {
-            Name = "Lerroy",
-            Calories = 200
-        };
+        
 
         delegate void PassTheCat(string name, int calories);
 
@@ -20,9 +13,25 @@ namespace PassTheCat
 
         static void Main(string[] args)
         {
-            PassTheCat DelRobot = new Pass
+
+            Robot robot = new Robot();
+            Human human = new Human();
+            Bear bear = new Bear();
+            Cat lerroy = new Cat()
+            {
+                Name = "Lerroy",
+                Calories = 200
+            };
+
+
+            PassTheCat delHuman = new PassTheCat(DoSomethingWithCat);
+
 
             
+        }
+        public static void DoSomethingWithCat(Delegate passTheCat)
+        {
+            Console.WriteLine("the human pets " + );
         }
     }
 }
